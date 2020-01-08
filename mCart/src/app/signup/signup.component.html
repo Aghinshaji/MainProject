@@ -1,0 +1,24 @@
+
+ <!-- <div class="card-panel teal lighten-1">
+<h1> SIGN UP</h1>
+
+FIRST NAME <input type ="text" name="txt1" >
+LAST NAME <input type ="text" name="txt2" >
+Email: <input type ="text" name="txt3" >
+PASSWORD <input type ="password" name="txt4" >
+Rewrite PASSWORD <input type ="password" name="txt4" > 
+ <input type="button" value="signup" (click)="signup()" > 
+  </div> -->
+
+
+  <div class="form-class">
+    <form action="/accounts/validate-signup" method="POST" id="form-input">
+        <div class="form-label">First Name</div> <input type="text" name="fname" required>
+        <div class="form-label">Second Name</div> <input type="text" name="lname" required>
+        <div class="form-label">E-mail</div> <input type="text" name="username" required>
+        <div class="form-label">Password</div> <input id="password" type="password" name="password" required>
+        <div class="form-label">Re-Type Password</div> <input id="re-password" type="password" name="re_password" required>
+  </div>
+        <div id="submit-btn-id"><button id="submit-btn" name="submit" >SIGN UP</button></div>
+
+    </form>

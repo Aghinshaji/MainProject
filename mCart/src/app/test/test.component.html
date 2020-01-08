@@ -1,0 +1,31 @@
+
+<div *ngIf= "showedit">
+<h3>{{Pname}}</h3>
+  Company <input type="text" name="txtc" [(ngModel)]="newc"/>
+    
+  Price <input type="text" name="txtp" [(ngModel)]="newp"/>
+  <input type="button" value="update" (click)="update()" />
+</div>
+<hr>
+<hr/>
+  <input type="button" value= "Click to show mobiles" (click)="connect()"/>
+
+  <table>
+    <tr>
+      <td> Mobiles</td>
+      <td> Brand</td>
+      <td> Prize</td>
+    </tr>
+    <tr *ngFor= "let p of product, let i=index">
+      <td> {{p.dress}}</td>
+      <td> {{p.brand}}</td>
+      <td> {{p.Price}}</td>
+      <td>
+        <input type="button" value="delete" (click)="delete(p.name,i)"> </td>
+        <td><input type="button" value="Edit" (click)="Edit(p.name,p.Company,p.Price)"> </td>
+
+     
+
+    </tr>
+  </table>
+
